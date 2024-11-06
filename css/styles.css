@@ -300,27 +300,25 @@ p {
 /* Каталог */
 
 .catalog {
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color:#fbfbfb;
     height: 690px;
     margin-top: 98px;
     width: 1300px;
     margin-left: 16vw;
-    padding-bottom: 105px;
+    padding-bottom: 5px;
 }
 .cat-panel {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    width: 1100px;
     margin-top: 67px;
+    margin-left: -10px;
 }
 
 .cat-panel h2{
-    margin-left: -25px;
+    margin-left: 100px;
     display: flex;
     font-size: 36px;
     font-weight: lighter;
@@ -351,6 +349,7 @@ p {
     display: flex;
     margin-top: 85px;
     padding-left: 40px;
+    margin-left: 0px;
 }
 
 .cat-card {
@@ -407,6 +406,10 @@ p {
     font-size:20px;
     font-weight: bold;
 
+}
+
+.cat-1-part, .cat-2-part {
+    display: flex;
 }
 
 /*////////////////////////////////////////////////////////////////*/
@@ -684,22 +687,23 @@ footer {
     }
     .catalog {
         width: 1110px;
-        margin-left: 18vw;
-        padding-bottom: 25vw;
+        margin-left: 16vw;
+        padding-bottom: 450px;
     }
 
     .cat-panel {
-        margin-top: 45vh;
+        margin-top: 5%;
         display: flex;
         justify-content: space-between;
         height: 70px;
         width: 1000px;
+        margin-left: -20px;
     }
 
     .cat-nav-panel {
         display: flex;
         margin-top: 40px;
-        margin-left:520px;
+        margin-left:470px;
     }
 
     .foot-left-column {
@@ -731,6 +735,7 @@ footer {
         flex-direction: column;
         margin-top: 55px;
         padding-left: 40px;
+        margin-left: 23%;
     }
     
     .cat-card {
@@ -743,10 +748,10 @@ footer {
     .catalog {
         width: 1000px;
         margin-left: 17vw;
-        padding-bottom: 53vh;
+        padding-bottom: 450px;
     }
     .cat-panel {
-        margin-top: 45vh;
+        margin-top: 10%;
         margin-left: 6vw;
         display: flex;
         justify-content: space-between;
@@ -755,7 +760,7 @@ footer {
     }
 
     .cat-panel h2 {
-        margin-left: 105px;
+        margin-left: -35px;
     }
 
     .cat-nav-panel {
@@ -816,18 +821,21 @@ footer {
     .inf-cards {
         width: 100px;
     }
+    .cat-cards {
+        margin-left: 18%;
+    }
 }
 
 @media (max-width: 1350px) {
 
     .catalog {
         width: 900px;
-        margin-left: 14vw;
-        padding-bottom: 37vw;
+        margin-left: 15vw;
+        padding-bottom: 450px;
     }
 
     .cat-panel {
-        margin-top: 33vw;
+        margin-top: 10%;
         display: flex;
         justify-content: space-between;
         height: 70px;
@@ -838,7 +846,7 @@ footer {
         display: flex;
         font-size: 36px;
         font-weight: lighter;
-        margin-left: 130px;
+        margin-left: -10px;
     }
 
     .cat-nav-panel {
@@ -893,6 +901,10 @@ footer {
 
     .inf-cards {
         margin-left: 10vw;
+    }
+
+    .cat-cards {
+        margin-left: 15%;
     }
 }
 
@@ -964,7 +976,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;;
-        height: 22vh;
+        height: 230px;
     }
 
     .input {
@@ -983,11 +995,11 @@ footer {
     .catalog {
         width: 800px;
         margin-left: 11vw;
-        padding-bottom: 155vh;
+        padding-bottom: 1450px;
     }
 
     .cat-panel {
-        margin-top: 130vh;
+        margin-top: 7%;
         display: flex;
         justify-content: space-between;
         height: 70px;
@@ -998,7 +1010,7 @@ footer {
         display: flex;
         font-size: 36px;
         font-weight: lighter;
-        margin-left: 170px;
+        margin-left: 30px;
     }
 
     .cat-nav-panel {
@@ -1035,6 +1047,10 @@ footer {
     .first-panel span {
         width: 300px;
     }
+
+    .cat-cards {
+        margin-left: 30%;
+    }
 }
 
 @media (max-width: 960px) {
@@ -1042,20 +1058,20 @@ footer {
     .catalog {
         width: 700px;
         margin-left: 12vw;
-        padding-bottom: 155vh;
+        padding-bottom: 1500px;
     }
 
     .cat-panel h2{
         display: flex;
         font-size: 36px;
         font-weight: lighter;
-        margin-left: 210px;
+        margin-left: 20px;
+        margin-bottom: 0;
     }
 
-    .cat-nav-panel {
-        display: flex;
-        margin-top: 40px;
-        margin-left: 50px;
+    .cat-panel {
+        flex-direction: column;
+        margin-bottom: 0;
     }
 
     .banner {
@@ -1067,6 +1083,10 @@ footer {
         padding-left: 3vw;
         padding-right: 0px;
     }
+    .cat-cards {
+        margin-top: 20%;
+        margin-left: 25%;
+    }
 }
 
 @media (max-width: 860px) {
@@ -1074,18 +1094,19 @@ footer {
     .catalog {
         width: 600px;
         margin-left: 15vw;
+        padding-bottom: 1500px;
     }
 
     .cat-panel {
         flex-direction: column;
     }
     .cat-nav-panel {
-        margin-left: 30vw;
-        margin-top: 0;
+        margin-left: 5%;
+        margin-top: 5%;
     }
 
     .cat-cards {
-        margin-top: 10vh;
+        margin-top: 20%;
     }
     .conses {
         margin-left: 11vw;
@@ -1134,13 +1155,14 @@ footer {
     .catalog {
         width: 500px;
         margin-left: 17vw;
+        padding-bottom: 1450px;
     }
 
     .cat-panel h2 {
-        margin-left: 250px;
+        margin-left: 0px;
     }   
     .cat-nav-panel {
-        margin-left: 32vw;
+        margin-left: 0%;
     }
 
     .banner {
@@ -1161,6 +1183,9 @@ footer {
 
     .title-text {
         width: 70vw;
+    }
+    .cat-cards {
+        margin-left: 15%;
     }
 } 
 
@@ -1221,19 +1246,19 @@ footer {
     .catalog {
         width: 100vw;
         margin-left: 0;
-        padding-bottom: 170vh;
+        padding-bottom: 1450px;
     }
 
     .cat-nav-panel {
-        margin-left: 45vw;
+        margin-left: 20px;
     }
 
     .cat-panel {
-        margin-top: 155vh;
+        margin-top: 10%;
     }
 
     .cat-panel h2 {
-        margin-left: 320px;
+        margin-left: 90px;
     }   
 
     .cat-cards {
@@ -1255,6 +1280,10 @@ footer {
 
     .comp-my-giro, .clients, .help {
         margin-left: 0px;
+    }
+
+    .cat-cards {
+        margin-left: 20%;
     }
 }
 
@@ -1285,13 +1314,15 @@ footer {
     }
 
     .cat-panel h2 {
-        margin-left: 350px;
+        margin-left: 60px;
     }
 
     .cat-nav-panel {
-        margin-left: 250px;
+        margin-left: -35px;
     }
-
+    .cat-cards {
+        margin-left: 35px;
+    }
     .conses {
         margin-left: -30px;
     }
@@ -1335,15 +1366,19 @@ footer {
     }
     
     .cat-panel h2 {
-        margin-left: 360px;
+        margin-left: 50px;
     }
 
     .cat-nav-panel {
-        margin-left: 280px;
+        margin-left: -25px;
     }
 
     .cat-nav-item {
         margin-left: 15px;
+    }
+
+    .cat-cards {
+        margin-left: 2%;
     }
 
     .conses {
