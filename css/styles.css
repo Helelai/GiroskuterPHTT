@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page {
@@ -7,10 +8,13 @@ body {
     margin-right: 20%;
     margin-top: 8px;
     font-weight: lighter;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 
+/*////////////////////////////////////////////////////////////////*/
+
+/* Шапка */
 .first-panel, .second-panel {
     display: flex;
     justify-content: space-between;
@@ -20,13 +24,10 @@ body {
 }
 
 .first-panel-shadow {
-    margin: 0;
-    position: relative;
-    left: -35%;
-    width: 101vw;
+    width: 100vw;
     height: 10px;
     box-sizing: border-box;
-    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 .first-panel button {
@@ -34,7 +35,7 @@ body {
     width: 214px;
     height: 42px;
     padding: 10px;
-    background-color: #ffa019;
+    background-color: #FFA019;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
@@ -52,17 +53,17 @@ body {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 .logo {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 18px;
 }
 .nav-item {
-    margin-left: 15px;
+    margin-left: 30px;
     font-size: 14px;
 }
 
@@ -71,29 +72,40 @@ body {
     color: black;
 }
 
+/*  Кнопка для мобильного устройства */
 
+.nav-mobile-button {
+    display: none;
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.nav-content {
+    display: flex;
+}
+
+
+/* Изображение шапки */
 .image-header {
-    margin:0;
-    position: relative;
-    left:-40%;
     height: 877px;
-    width:104vw;
+    width:100vw;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/scooter.jpg') no-repeat center center / cover ;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .image-header button {
-    width: 10%;
+    width: 145px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 10px;
     border-width: 0px;
     font-weight: bold;
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 12px;
+    margin-top: 44px;
     margin-left: 3%;
 
 }
@@ -115,11 +127,1237 @@ body {
 }
 
 .title-text {
-    width: 65%;
+    width: 743px;
+    font-size: 20px;
     text-align: center;
 }
 
+/*////////////////////////////////////////////////////////////////*/
+
+/* преимущества */
+.advantages {
+    margin-top: 142px;
+}
+.advantages-header {
+    display: flex;
+    justify-content: space-between;
+}
+.advantages h2 {
+    display: flex;
+    font-size: 36px;
+    font-weight:lighter;
+}
+.arrows {
+    display: flex;
+    margin-top: 35px;
+}
+/* Контейнеры преимуществ */
+
+.advantages-icons {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    align-items: center;
+    margin-left: 92px;
+    margin-right: 66px;
+
+}
+.adv-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cons-icon {
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+.advantages-text {
+    display:flex;
+    font-size: 20px;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* Cекция about */
+
+.about {
+    margin-top: 107px;
+    margin-bottom: 90px;
+}
+
+.about h2 {
+    display: flex;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 60px;
+}
+
+.first-text {
+    font-size: 20px;
+    margin-bottom: 63px;
+}
+
+.second-text {
+    font-style: 20px;
+    margin-bottom: 91px;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* Рассылка */
+
+.subscribe {
+    display: flex;
+    background-color: #ffa019;
+    width: 100vw;
+    align-items: center;
+    height: 98px;
+}
+
+.subscribe-text {
+    width: 290px;
+    font-size: 18px;
+    margin-left: 20%;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.input {
+    display: flex;
+    margin-left: 126px;
+}
+
+.name-input {
+    display: flex;
+}
+.email-input {
+    display: flex;
+    margin-left: 33px;
+
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;
+    padding: 10px;
+    width: 222px;
+    color: #fff;
+}
 
 
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    background-color: #fff;
+    padding: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* Особенности гироскутеров*/
+
+.features h2 {
+    margin-top: 138px;
+    display: flex;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.features-cont {
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.minus-features, .plus-features-1, .plus-features-2 {
+    display:flex;
+    flex-direction: column;
+}
+
+.feature-item, p{
+    font-size: 20px;
+}
+
+p {
+    margin-top: 43px;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* Каталог */
+
+.catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#fbfbfb;
+    height: 690px;
+    margin-top: 98px;
+    width: 1300px;
+    margin-left: 16vw;
+    padding-bottom: 105px;
+}
+.cat-panel {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 1100px;
+    margin-top: 67px;
+}
+
+.cat-panel h2{
+    margin-left: -25px;
+    display: flex;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.cat-nav-panel {
+    display: flex;
+    margin-top: 44px;
+    margin-left: 635px;
+}
+
+.cat-nav-item {
+    margin-left: 30px;
+}
+
+.cat-all {
+    background-color:#ffa019;
+    padding:2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Карточки каталога */
+
+.cat-cards {
+    display: flex;
+    margin-top: 85px;
+    padding-left: 40px;
+}
+
+.cat-card {
+    background-color:#ffffff;
+    padding-top: 20px;
+    width: 290px;
+    height: 440px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cat-1-part {
+    display: flex;
+}
+.cat-2-part {
+    display: flex;
+}
+
+/* Заголовки карточек */
+.cat-card-title {
+    display: flex;
+    background-image: url('../img/triangle.png');
+    width: 94px;
+    height: 39px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-weight:bolder;
+    font-size: 14px;
+}
+
+.second-title {
+    background-image: url('../img/triangle-2.png');
+    width: 127px;
+    height: 37px;
+}
+
+.third-title {
+    background-image: url('../img/triangle-3.png');
+    width: 203px;
+    height: 37px;
+}
+
+.cat-card-name {
+    font-size: 18px;
+    width: 220px;
+    margin-left: 50px;
+}
 
 
+.cat-card-price {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size:20px;
+    font-weight: bold;
+
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/*  Наши консультанты   */
+
+.consultants h2 {
+    display: flex;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-top: 67px;
+}
+
+.conses {
+    display: flex;
+    justify-content: space-between;
+}
+.cons-cont {
+    display: flex;
+    width: 357px;
+    height: 178px;
+    margin-top: 88px;
+}
+
+.cons-icon {
+    height: 174px;
+}
+.cons-content {
+    background: #fbfbfb;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 30px; 
+    padding-right: 20px;
+}
+
+.cons-name {
+    font-size: 20px;
+}
+
+.cons-job {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.cons-button {
+    margin-top: 20px;
+    background-color: #ffa019;
+    border-width: 0;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 70px;
+    color: #fff;
+    padding: 8px;
+}
+
+
+/*////////////////////////////////////////////////////////////////*/
+
+/*  Баннер  */
+.banner {
+    display: flex;
+    font-size: 50px;
+    background-color: #fbfbfb;
+    width: 1852px;
+    height: 200px;
+    margin-left: 2vw;
+    justify-content: center;
+    align-items: center;
+    font-size: bold;
+    margin-top: 80px;
+}
+
+.banner-text {
+    width: 1500px;
+    padding-right:170px;
+    padding-left:170px;
+}
+
+.banner-text a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #9B9B9B;
+}
+.stopper-1 {
+    display: flex;
+}
+
+.stopper-2 {
+    display: flex;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/*  Полезная информация */
+
+.information h2 {
+    display: flex;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-top: 76px;
+}
+
+.inf-cards {
+    display: flex;
+    margin-top: 73px;
+}
+
+.inf-card {
+    display: flex;
+    margin-right: 25px;;
+}
+
+.inf-1-part {
+    display: flex;
+}
+
+.inf-2-part {
+    display: flex;
+}
+
+.inf-text {
+    font-size: 18px;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/*  Футер   */
+
+footer {
+    display: flex;
+    margin-top: 166px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #fbfbfb;
+    height: 372px;
+    width: 100vw;
+
+}
+
+.foot-left-column {
+    padding-left: 395px;
+    width: 300px;
+    padding-top: 60px;
+}
+
+.foot-left-column p {
+    display: flex;
+    font-size: 14px;
+    color: #8191A6;
+}
+
+.foot-right-column {
+    padding-left: 180px;
+    padding-top: 70px;
+    display:flex; 
+}
+
+.comp-my-giro, .clients, .help {
+    display:flex; 
+    flex-direction: column;
+    margin-left: 37px;
+    font-size: 14px;
+    color: #8191A6;
+}
+
+.comp-my-giro ul, .clients ul, .help ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+.comp-my-giro a, .clients a, .help a {
+    list-style-type: none;
+    margin-top: 0px;
+    text-decoration: none;
+    color: #8191A6;
+}
+
+
+.comp-my-giro h4, .clients h4, .help h4 {
+    color: black;
+    margin-left: 30px;
+}
+
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* INTERACTIVE */
+
+.first-panel button:hover {
+    background-color: #e79418;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    color: #e79418;
+}
+
+.image-header button:hover {
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+.cat-nav-item:hover {
+    color: #e79418;
+    cursor: pointer;
+}
+
+.cat-all:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.cons-button:hover {
+    background-color: #e79418;
+    cursor: pointer;
+}
+
+.inf-card img:hover {
+    cursor: pointer;
+}
+
+.comp-my-giro a:hover, .clients a:hover, .help a:hover {
+    color: #e79418;
+}
+
+.banner-text a:hover {
+    color: #e79418;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* MEDIA запросы */
+
+@media (max-width:1760px) {
+    
+    .name-input {
+        margin-left: -120px;
+    }
+    .email-input {
+        margin-left: 10px;
+    }
+
+    .inf-cards {
+        margin-left: 15vw;
+    }
+    .inf-card {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .inf-1-part, .inf-2-part {
+        flex-direction: column;
+    }
+
+    .inf-card img:hover {
+        cursor: pointer;
+    }
+    .catalog {
+        width: 1110px;
+        margin-left: 18vw;
+        padding-bottom: 25vw;
+    }
+
+    .cat-panel {
+        margin-top: 45vh;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        width: 1000px;
+    }
+
+    .cat-nav-panel {
+        display: flex;
+        margin-top: 40px;
+        margin-left:520px;
+    }
+
+    .foot-left-column {
+        padding-left: 330px;
+    }
+
+    .banner-text {
+        width: 1500px;
+        padding-left:6vw;
+        font-size: 42px;
+        padding-right: 0px;
+    }
+
+    .banner {
+        width: 1500px;
+        margin-left: 6vw;
+    }
+
+    .foot-left-column {
+        padding-left: 21vw;
+    }
+
+    .foot-right-column {
+        padding-left: 7vw;
+    }
+
+    .cat-cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+        padding-left: 40px;
+    }
+    
+    .cat-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .catalog {
+        width: 1000px;
+        margin-left: 17vw;
+        padding-bottom: 53vh;
+    }
+    .cat-panel {
+        margin-top: 45vh;
+        margin-left: 6vw;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        width: 1000px;
+    }
+
+    .cat-panel h2 {
+        margin-left: 105px;
+    }
+
+    .cat-nav-panel {
+        margin-left: 330px;
+    }
+
+    .banner {
+        width: 1300px;
+    }
+    .banner-text {
+        width: 1300px;
+        font-size: 35px;
+        padding-left: 10vw;
+        padding-right: 0px;
+    }
+
+    .input {
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-input {
+        margin-right: 130px;
+        margin-top: 10px;
+    }
+
+    input {
+        margin-left: 0px;
+    }
+    .subscribe-text {
+        width: 300px;
+        font-size: 18px;
+        margin-left: 20%;
+        color: #ffffff;
+        font-weight:bold;
+    }
+
+    .subscribe {
+        height: 120px;
+    }
+      
+    .subscribe-button {
+        margin-left: -45px;
+
+    }
+
+    .foot-left-column {
+        padding-left: 20vw;
+    }
+
+    .foot-right-column {
+        padding-left: 0vw;
+    }
+
+    .inf-cards {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1350px) {
+
+    .catalog {
+        width: 900px;
+        margin-left: 14vw;
+        padding-bottom: 37vw;
+    }
+
+    .cat-panel {
+        margin-top: 33vw;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        width: 900px;
+    }
+
+    .cat-panel h2{
+        display: flex;
+        font-size: 36px;
+        font-weight: lighter;
+        margin-left: 130px;
+    }
+
+    .cat-nav-panel {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 250px;
+    }
+
+    .banner {
+        width: 1200px;
+    }
+    .banner-text {
+        width: 1200px;
+        font-size: 30px;
+        padding-left: 12vw;
+        padding-right: 0px;
+    }
+
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe-text {
+        width: 200px;
+    }
+    .subscribe {
+        height: 120px;
+    }
+    .subscribe-button {
+        margin-left: -80px;
+    }
+    .conses {
+        margin-left: 20vw;
+        flex-direction: column;
+    }
+
+    .cons-cont {
+        margin-top: 40px;
+    }
+
+    .foot-left-column {
+        padding-left: 13vw;
+    }
+    
+    .foot-right-column {
+        padding-left: 0vw;
+    }
+
+    .inf-cards {
+        margin-left: 10vw;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .advantages-icons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .adv-cont {
+        margin-bottom: 15px;
+    }
+    .adv-cont div {
+        margin-top: 10px;
+    }
+    
+    .nav-mobile-button {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .nav-content{
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .nav-item {
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .nav-content.is-open{
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    .banner {
+        width: 1030px;
+    }
+    .banner-text {
+        width: 1030px;
+        font-size: 35px;
+        padding-left: 0vw;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .cons-icon {
+        margin-left: 3vw;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .subscribe-text {
+        width: 600px;
+        margin-left: 2vw;
+        margin-bottom: 20px;
+    }
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;;
+        height: 22vh;
+    }
+
+    .input {
+        margin-left: 12vw;
+    }
+
+    .email-input {
+        margin-top: 20px;
+    }
+    .subscribe-button {
+        margin-left: 2px;
+        margin-top: 20px;
+    }
+    
+
+    .catalog {
+        width: 800px;
+        margin-left: 11vw;
+        padding-bottom: 155vh;
+    }
+
+    .cat-panel {
+        margin-top: 130vh;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        width: 900px;
+    }
+
+    .cat-panel h2{
+        display: flex;
+        font-size: 36px;
+        font-weight: lighter;
+        margin-left: 170px;
+    }
+
+    .cat-nav-panel {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+
+    .cat-1-part, .cat-2-part {
+        flex-direction: column;
+    }
+
+    .inf-cards {
+        flex-direction: column;
+        align-items :center;
+        justify-content: center;
+        margin-left: 29vw;
+    }
+
+    .foot-left-column {
+        padding-left: 30px;
+    }
+
+    .banner {
+        width: 900px;
+    }
+    .banner-text {
+        width: 1300px;
+        font-size: 35px;
+        padding-left: 3vw;
+        padding-right: 0px;
+    }
+
+    .first-panel span {
+        width: 300px;
+    }
+}
+
+@media (max-width: 960px) {
+    
+    .catalog {
+        width: 700px;
+        margin-left: 12vw;
+        padding-bottom: 155vh;
+    }
+
+    .cat-panel h2{
+        display: flex;
+        font-size: 36px;
+        font-weight: lighter;
+        margin-left: 210px;
+    }
+
+    .cat-nav-panel {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .banner {
+        width: 840px;
+    }
+    .banner-text {
+        width: 1300px;
+        font-size: 35px;
+        padding-left: 3vw;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .catalog {
+        width: 600px;
+        margin-left: 15vw;
+    }
+
+    .cat-panel {
+        flex-direction: column;
+    }
+    .cat-nav-panel {
+        margin-left: 30vw;
+        margin-top: 0;
+    }
+
+    .cat-cards {
+        margin-top: 10vh;
+    }
+    .conses {
+        margin-left: 11vw;
+    }
+
+    .banner {
+        width: 760px;
+    }
+    .banner-text {
+        width: 760;
+        padding-left: 0vw;
+    }
+
+    .foot-right-column {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 500px;
+    }
+
+    .foot-left-column {
+        padding-left: 19vw;
+    }
+
+    .subscribe-button {
+        margin-left: -2vw;
+    }
+}
+
+@media (max-width:770px) {
+    .features-cont {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .plus-features-1, .plus-features-2, .minus-features {
+        margin-top: 20px;
+    }
+
+    .plus-features-1 {
+        margin-left: 13vw;
+    }
+
+    .catalog {
+        width: 500px;
+        margin-left: 17vw;
+    }
+
+    .cat-panel h2 {
+        margin-left: 250px;
+    }   
+    .cat-nav-panel {
+        margin-left: 32vw;
+    }
+
+    .banner {
+        width: 87vw;
+    }
+
+    .conses {
+        margin-left: 8vw;
+    }
+
+    .foot-left-column {
+        margin-left: -5vw;
+    }
+
+    .inf-cards {
+        margin-left: 26vw;
+    }
+
+    .title-text {
+        width: 70vw;
+    }
+} 
+
+@media (max-width: 660px) {
+
+    .subscribe-button {
+        margin-left: -6vw;
+    }
+
+    .catalog {
+        width: 500px;
+        margin-left: 14vw;
+    }
+
+    .conses {
+        margin-left: 5vw;
+    }
+
+    .foot-left-column {
+        padding-left: 11vw;
+    }
+
+    .inf-cards {
+        margin-left: 25vw;
+    }
+    
+}
+
+@media (max-width: 580px) {
+    
+    .first-panel span {
+        width: 200px;
+    }
+
+    .image-header {
+        height: 600px;
+    }
+    .adv-text-cons {
+        margin-left: 30px;
+    }
+
+    .subscribe-text {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .subscribe {
+        height: 32vh;
+    }
+
+    .input {
+        margin-left: 25vw;
+    }
+    .subscribe-button {
+        margin-left: 5vw;
+    }
+
+    .catalog {
+        width: 100vw;
+        margin-left: 0;
+        padding-bottom: 170vh;
+    }
+
+    .cat-nav-panel {
+        margin-left: 45vw;
+    }
+
+    .cat-panel {
+        margin-top: 155vh;
+    }
+
+    .cat-panel h2 {
+        margin-left: 320px;
+    }   
+
+    .cat-cards {
+        margin-top: 12vh;
+    }
+
+    .conses {
+        margin-left: 0vw;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .foot-right-column {
+        flex-direction: row;
+        margin-left: -5px;
+    }
+
+    .comp-my-giro, .clients, .help {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .first-panel span {
+        width: 100vw;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .first-panel {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adv-text-assort {
+        margin-left: 30px;
+    }
+
+    .adv-text-kach {
+        margin-left: 20px;
+    }
+
+    .subscribe-button {
+        margin-left: -10px;
+    }
+
+    .cat-panel h2 {
+        margin-left: 350px;
+    }
+
+    .cat-nav-panel {
+        margin-left: 250px;
+    }
+
+    .conses {
+        margin-left: -30px;
+    }
+
+    .inf-cards {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .advantages-containers {
+        margin-left:-30px;
+    }
+    .first-panel span {
+        width: 300px;
+    }
+
+    .advantages-header {
+        flex-direction:  column;
+    }
+    .arrows {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adv-text-kach {
+        margin-left: 5px;
+    }
+
+    .input {
+        margin-left: 30vw;
+    }
+
+    .plus-features-1 {
+        margin-left: 25px;
+    }
+
+    .plus-features-2 {
+        margin-left: 20px;
+    }
+    
+    .cat-panel h2 {
+        margin-left: 360px;
+    }
+
+    .cat-nav-panel {
+        margin-left: 280px;
+    }
+
+    .cat-nav-item {
+        margin-left: 15px;
+    }
+
+    .conses {
+        margin-left: -50px;
+    }
+
+    .inf-cards {
+        margin-left:75px;
+    }
+
+    .banner-text {
+        width: 300px;
+        flex-direction: column;
+    }
+    .banner {
+        height: 300px;
+        width: 300px;
+        margin-left: 10vw;
+    }
+
+    .foot-right-column {
+        flex-direction: column;
+    }
+
+    
+}
