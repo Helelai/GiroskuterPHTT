@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+}
+
+.page {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.first-panel, .second-panel {
+    display: flex;
+    justify-content: space-between;
+}
+.first-panel,.second-panel {
+    margin-top: 5px;
+}
+
+.first-panel-shadow {
+    margin: 0;
+    position: relative;
+    left: -35%;
+    width: 101vw;
+    height: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.first-panel button {
+    font-size: 13px;
+    width: 214px;
+    height: 42px;
+    padding: 10px;
+    background-color: #ffa019;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+.first-panel span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight:normal;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-item {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.image-header {
+    margin:0;
+    position: relative;
+    left:-40%;
+    height: 877px;
+    width:104vw;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/scooter.jpg') no-repeat center center / cover ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-header button {
+    width: 10%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-width: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 3%;
+
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    padding-top: 15%;
+    color: #fff;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.title-text {
+    width: 65%;
+    text-align: center;
+}
+
+
+
+
+
